@@ -21,6 +21,7 @@ O papel de parede oficial do SakuraOS está localizado em: `assets/anime_wallpap
   - `airootfs/` : Estrutura de arquivos que serão copiados diretamente para o sistema live.
 - `assets/` : Recursos de mídia e imagens da distro.
 - `build-iso.sh` : Script para compilar a ISO localmente (caso você esteja em um sistema Linux).
+- `build-docker.sh` : Script para compilar a ISO usando Docker (funciona no macOS).
 - `setup-sakura.sh` : Script de configuração pós-instalação para aplicar o visual em qualquer sistema rodando Arch Linux.
 
 ---
@@ -41,6 +42,17 @@ Como compilar uma ISO de Linux requer o kernel Linux e ferramentas de loopback, 
    ```
 3. Acesse a aba **Actions** no seu repositório do GitHub.
 4. Você verá o workflow **Build SakuraOS ISO** rodando. Assim que finalizar (cerca de 5 a 10 minutos), você poderá baixar a ISO compilada diretamente nos artefatos da execução!
+
+### 🐳 Alternativa: Compilar Localmente via Docker (no Mac)
+
+Se você tem o **Docker Desktop** instalado no seu Mac, pode compilar a ISO localmente sem precisar do GitHub:
+
+1. Certifique-se de que o Docker está aberto e rodando no seu Mac.
+2. No terminal do Mac, execute o script:
+   ```bash
+   ./build-docker.sh
+   ```
+3. O script iniciará um container Arch Linux com privilégios para criar e formatar os arquivos de loopback e compilar a imagem. A ISO final será salva na pasta `out/`.
 
 ---
 
