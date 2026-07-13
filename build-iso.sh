@@ -55,6 +55,11 @@ echo "[3/4] Sobrepondo arquivos do SakuraOS no airootfs..."
 mkdir -p "$BUILD_DIR/airootfs"
 cp -rf "$REPO_DIR/archiso/airootfs/"* "$BUILD_DIR/airootfs/"
 
+# Debug: Imprimir o profiledef.sh gerado para inspeção
+echo "=== DEBUG: /tmp/sakuraos-profile/profiledef.sh ==="
+cat "$BUILD_DIR/profiledef.sh"
+echo "==================================================="
+
 # Executar o mkarchiso
 echo "[4/4] Iniciando compilação da ISO..."
 mkarchiso -v -w "$WORK_DIR" -o "$OUT_DIR" "$BUILD_DIR"
