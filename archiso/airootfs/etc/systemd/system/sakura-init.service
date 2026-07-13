@@ -1,0 +1,13 @@
+[Unit]
+Description=SakuraOS Live ISO Initialization
+DefaultDependencies=no
+After=sysinit.target local-fs.target
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/sakura-init.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

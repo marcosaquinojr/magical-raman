@@ -1,0 +1,31 @@
+[org/gnome/desktop/wm/preferences]
+button-layout='close,minimize,maximize:'
+
+[org/gnome/desktop/interface]
+gtk-theme='WhiteSur-Dark'
+icon-theme='WhiteSur-dark'
+cursor-theme='WhiteSur'
+font-name='Cantarell 11'
+document-font-name='Cantarell 11'
+monospace-font-name='Fira Code 10'
+
+[org/gnome/desktop/shell/extensions/user-theme]
+name='WhiteSur-Dark'
+
+[org/gnome/shell/extensions/dash-to-dock]
+dock-position='BOTTOM'
+dash-max-icon-size=48
+custom-theme-shrink=true
+extend-height=false
+background-opacity=0.2
+multi-monitor=true
+click-action='focus-minimize-or-previews'
+show-apps-at-top=false
+intellihide=false
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/sakura_wallpaper.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/sakura_wallpaper.jpg'
+
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/share/backgrounds/sakura_wallpaper.jpg'

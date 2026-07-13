@@ -1,0 +1,58 @@
+# --- Base System & Booting ---
+arch-install-scripts
+base
+bash
+btrfs-progs
+cryptsetup
+device-mapper
+dosfstools
+e2fsprogs
+efibootmgr
+grub
+iproute2
+linux
+linux-firmware
+mkinitcpio
+nano
+sudo
+systemd
+vi
+which
+dhcpcd
+networkmanager
+
+# --- Graphical Interface (GNOME) ---
+xorg-server
+gnome-shell
+gdm
+nautilus
+gnome-control-center
+gnome-tweaks
+gnome-menus
+gnome-shell-extensions
+xdg-user-dirs-gtk
+
+# --- Sound & Pipewire ---
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+
+# --- Customization & Utilities ---
+git
+curl
+wget
+unzip
+dconf
+fastfetch
+kitty
+sassc
+gtk-murrine-engine
+gtk-engines
+
+# --- Theme Support & Fonts ---
+ttf-dejavu
+ttf-liberation
+noto-fonts
+noto-fonts-emoji
+EOF
