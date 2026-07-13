@@ -19,7 +19,7 @@ jobs:
       - name: Install system dependencies
         run: |
           pacman -Syu --noconfirm
-          pacman -S --noconfirm git archiso
+          pacman -S --noconfirm git archiso grub
 
       - name: Build SakuraOS ISO
         run: |

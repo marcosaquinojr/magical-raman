@@ -1,0 +1,27 @@
+# --- SakuraOS Desktop Environment & Core Apps ---
+gnome-shell
+gdm
+nautilus
+gnome-control-center
+gnome-tweaks
+gnome-menus
+gnome-shell-extensions
+xdg-user-dirs-gtk
+
+# --- Sound & Audio ---
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+
+# --- Themes, Customization & Utilities ---
+git
+curl
+wget
+unzip
+dconf
+fastfetch
+kitty
+sassc
+gtk-murrine-engine
+gtk-engines
