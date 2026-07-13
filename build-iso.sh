@@ -45,7 +45,7 @@ sed -i 's/iso_publisher=.*/iso_publisher="SakuraOS Project"/' "$BUILD_DIR/profil
 sed -i 's/iso_application=.*/iso_application="SakuraOS Live\/Installation Media"/' "$BUILD_DIR/profiledef.sh"
 
 # Adicionar permissões de arquivos para nossos scripts executáveis
-echo 'file_modes+=([/usr/local/bin/sakura-init.sh]="0:0:0755" [/usr/local/bin/sakura-setup.sh]="0:0:0755")' >> "$BUILD_DIR/profiledef.sh"
+echo 'file_modes+=(["/usr/local/bin/sakura-init.sh"]="0:0:0755" ["/usr/local/bin/sakura-setup.sh"]="0:0:0755")' >> "$BUILD_DIR/profiledef.sh"
 
 # Adicionar pacotes customizados ao final da lista padrão
 cat "$REPO_DIR/archiso/packages-sakura.txt" >> "$BUILD_DIR/packages.x86_64"
