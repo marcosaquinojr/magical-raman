@@ -23,5 +23,3 @@ dconf
 fastfetch
 kitty
 sassc
-gtk-murrine-engine
-gtk-engines

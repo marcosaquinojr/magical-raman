@@ -53,9 +53,7 @@ sudo pacman -S --needed --noconfirm \
     gnome-tweaks \
     fastfetch \
     kitty \
-    sassc \
-    gtk-murrine-engine \
-    gtk-engines
+    sassc
 
 success "Pacotes do sistema instalados com sucesso!"
 
